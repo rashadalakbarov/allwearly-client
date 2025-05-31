@@ -32,16 +32,12 @@ const Header = () => {
       <Navbar expand="lg">
         <Container>
           <Navbar.Brand href="#">
+            <img src={company.logo} alt="company logo" width="50" />
             {company.name}
-            <img src={company.logo} alt="Company Logo" width="170" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="ms-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
-              navbarScroll
-            >
+            <Nav className="mx-auto my-2 my-lg-0" navbarScroll>
               <Nav.Link href="#action1">Mens</Nav.Link>
               <Nav.Link href="#action2">Women</Nav.Link>
               <Nav.Link href="#action2">Kids</Nav.Link>

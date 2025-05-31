@@ -1,10 +1,17 @@
 import React from "react";
-import Header from "../components/Header";
+
+import Layout from "../components/Layout";
+import Hero from "../components/Hero";
+import Products from "../components/Products";
 
 const Home = () => {
   return (
     <>
-      <Header />
+      <Layout>
+        <Hero />
+        <Products />
+        <Products />
+      </Layout>
     </>
   );
 };

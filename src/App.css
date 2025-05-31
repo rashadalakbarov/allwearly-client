@@ -37,11 +37,11 @@ h4 {
 
 a {
   text-decoration: none;
-  color: var(--primary-black);
+  color: var(--primary-black) !important;
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 .primary-text {
@@ -53,7 +53,7 @@ a:hover {
 }
 
 ul {
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 
 ul li {
@@ -96,4 +96,90 @@ ul li {
   background-color: #43c3d1;
   border-color: #43c3d1;
   color: #fff;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 10px 15px;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--primary-black);
+}
+
+.section-1 .swiper .swiper-wrapper .swiper-slide {
+  height: 650px;
+}
+
+.section-1 .swiper .swiper-wrapper .swiper-slide .content {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product:hover img {
+  scale: 1.2;
+}
+
+.product .card-img {
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.product .card-img img {
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.product .card-body {
+  padding: 0;
+}
+
+.product .card-body a,
+.product .card-body .price {
+  font-size: 1.2em;
+}
+
+.product .card-body a:hover {
+  color: var(--primary-color) !important;
+}
+
+.product .card-body .price span {
+  color: #ccc;
+}
+
+footer {
+  background-color: var(--tertiary-color);
+}
+
+footer h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  font-size: 1.2em;
+  color: var(--primary-white);
+  text-decoration: none;
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .section-1 .swiper .swiper-wrapper .swiper-slide {
+    height: 400px;
+  }
 }
